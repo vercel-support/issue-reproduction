@@ -8,9 +8,9 @@ class JwtTokenService {
     this.admin_publicKEY = '23292';
 
     this.signOptions = {
-      algorithm: algorithm,
-      expiresIn: expiresIn,
-      issuer: issuer,
+      algorithm: 'RS256',
+      expiresIn: '1h',
+      issuer: 'test',
     };
   }
 
