@@ -2,11 +2,11 @@ const { authService } = require('../services/jwt-token-service');
 
 const checkSecurityAns = async (req, res) => {
   let token = await authService.generateJwt({
-    oaid: userDetails.OAID,
-    sparakid: oalinkmaster.SparakID,
-    sungardid: oalinkmaster.SunGardID,
-    username: userDetails.username,
-    userId: userDetails.id,
+    oaid: '123',
+    sparakid: '123',
+    sungardid: '123',
+    username: '123',
+    userId: '123',
   });
 
   const responseObj = {
